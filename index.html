@@ -19,45 +19,44 @@
   <body>
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-2 mt-lg-0" href="#">
-          <h4>Paylo</h4>
-        </a>
-        <!-- Left links -->
-       
-        <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
-  
-      <!-- Right elements -->
-      
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+      <h4>Paylo</h4>
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <!-- <a class="nav-link" href="#">Dashboard</a> -->
         </li>
       </ul>
-        <!-- Avatar -->
-        <span>Pramod</span>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2">
+          About
+        </button>
+        <button type="button" class="btn btn-link px-3 me-2">
+          Contact
+        </button>
+        <span class="text-light mr-2">Pramod</span>
         <a
           class="dropdown-toggle d-flex align-items-center hidden-arrow"
           href="#"
@@ -67,7 +66,7 @@
           aria-expanded="false"
         >
           <img
-            src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+            src="img/man.svg"
             class="rounded-circle"
             height="25"
             alt=""
@@ -83,10 +82,14 @@
           </li>
         </ul>
       </div>
-      <!-- Right elements -->
     </div>
-    <!-- Container wrapper -->
-  </nav>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+    <!-- Navbar -->
+
   <!-- Navbar -->
   <section>
       
@@ -231,17 +234,19 @@
           <h4 class="payment-card-title">CARD, UPI & More</h5>
             <ul>
               <li><a data-mdb-toggle="modal"
-                data-mdb-target="#exampleModal"><img src="img/credit-cards.svg" class="img-fluid"></a></li>
+                data-mdb-target="#card"><img src="img/credit-cards.svg" class="img-fluid"></a></li>
                <li>Card <br/>
                <span>Visa, MasterCard, Rupay, and Maestro</span><br/>
            </ul>
            <ul>
-            <li><img src="img/upi-payment.svg" class="img-fluid"></li>
+            <li><a data-mdb-toggle="modal"
+              data-mdb-target="#upi"><img src="img/upi-payment.svg" class="img-fluid"></a></li>
              <li>UPI <br/>
              <span>Google Pay, PhonePe & more</span><br/>
          </ul>
          <ul>
-          <li><img src="img/bank-deposit.svg" class="img-fluid"></li>
+          <li><a data-mdb-toggle="modal"
+            data-mdb-target="#netBanking"><img src="img/bank-deposit.svg" class="img-fluid"></a></li>
            <li>Netbanking <br/>
            <span>All Indian banks</span><br/>
        </ul>
@@ -253,15 +258,15 @@
 <!-- Modal -->
 <div
 class="modal fade"
-id="exampleModal"
+id="card"
 tabindex="-1"
-aria-labelledby="exampleModalLabel"
+aria-labelledby="cardLabel"
 aria-hidden="true"
 >
 <div class="modal-dialog">
   <div class="modal-content">
     <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <h5 class="modal-title" id="cardLabel">Paylo</h5>
       <button
         type="button"
         class="btn-close"
@@ -269,16 +274,284 @@ aria-hidden="true"
         aria-label="Close"
       ></button>
     </div>
-    <div class="modal-body">...</div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
-        Close
-      </button>
-      <button type="button" class="btn btn-primary">Save changes</button>
+    <div class="modal-body">
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <p class="mb-3 font-weight-light">Add New Card</p>
+          <div class="col">
+            <div class="form-outline">
+              <input type="number" class="form-control" />
+              <label class="form-label">Card Number</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <input type="number" class="form-control" />
+              <label class="form-label">Empiry</label>
+            </div>
+          </div>
+        </div>
+      
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input type="text"  class="form-control" />
+            <label class="form-label">Card Holder's Name</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="number" class="form-control" />
+            <label class="form-label">CVV</label>
+          </div>
+        </div>
+      </div>
+    
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form2Example33"
+            checked
+          />
+          <label class="form-check-label" for="form2Example33">
+            Remember Card
+          </label>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Pay</button>
+      </form>
     </div>
   </div>
 </div>
 </div>
+</div>
+
+<!-- Modal for upi -->
+<div
+class="modal fade"
+id="upi"
+tabindex="-1"
+aria-labelledby="upiLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="upiLabel">Paylo</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-mdb-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <p class="mb-3 font-weight-light">PAY USING APPS</p>
+          <div class="col">
+            <div class="form-outline">
+              <div class="row border-bottom">
+                <div class="col-md-1">
+                  <img src="img/google-pay.svg" class="img-fluid">
+                </div>
+                <div class="col-md-10">Google Pay</div>
+                <div class="col-md-1">
+                  <input class="form-check-input" type="checkbox"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <div class="row border-bottom">
+              <div class="col-md-1">
+                <img src="img/phonepe-logo.svg" class="img-fluid">
+              </div>
+              <div class="col-md-10">PhonePe</div>
+              <div class="col-md-1">
+                <input class="form-check-input" type="checkbox"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <div class="row border-bottom">
+              <div class="col-md-1">
+                <img src="img/paytm.svg" class="img-fluid">
+              </div>
+              <div class="col-md-10">Paytm</div>
+              <div class="col-md-1">
+                <input class="form-check-input" type="checkbox"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form2Example33"
+            checked
+          />
+          <label class="form-check-label" for="form2Example33">
+            Remember Card
+          </label>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Pay</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal for netbanking -->
+<div
+class="modal fade"
+id="netBanking"
+tabindex="-1"
+aria-labelledby="netBankingLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="netBankingLabel">Paylo</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-mdb-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <p class="mb-3">Net Banking</p>
+          <div class="col-md-4 text-center">
+            <a href="#">
+              <img src="img/axis-bank.svg" width="40px" >
+             </a>
+            <p>Axis</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#">
+              <img src="img/HDFC_Bank_Logo.svg" width="40px">
+             </a>
+             <p>HDFC</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#">
+              <img src="img/ICICI_Bank_Logo.svg" width="40px">
+             </a>
+             <p>ICICI</p>
+          </div>
+        </div>
+      
+      <div class="row mb-4">
+        <div class="col-md-4 text-center">
+          <a href="#">
+            <img src="img/Yes_Bank_SVG_Logo.svg" width="40px">
+           </a>
+           <p>Yes</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#">
+            <img src="img/State_Bank_of_India_logo.svg" width="40px">
+           </a>
+           <p>SBI</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#">
+            <img src="img/HSBC_logo_(2018).svg" width="40px">
+           </a>
+           <p>HSBC</p>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <select class="select">
+          <option selected>Select a diffent Bank</option>
+        <option>Allahabad Bank</option>
+        <option>Andhra Bank</option>
+        <option>Axis Bank</option>
+        <option>Bank of Bahrain and Kuwait</option>
+        <option>Bank of Baroda - Corporate Banking</option>
+        <option>Bank of Baroda - Retail Banking</option>
+        <option>Bank of India</option>
+        <option>Bank of Maharashtra</option>
+        <option>Canara Bank</option>
+        <option>Central Bank of India</option>
+        <option>City Union Bank</option>
+        <option>Corporation Bank</option>
+        <option>Deutsche Bank</option>
+        <option>Development Credit Bank</option>
+        <option>Dhanlaxmi Bank</option>
+        <option>Federal Bank</option>
+        <option>ICICI Bank</option>
+        <option>IDBI Bank</option>
+        <option>Indian Bank</option>
+        <option>Indian Overseas Bank</option>
+        <option>IndusInd Bank</option>
+        <option>ING Vysya Bank</option>
+        <option>Jammu and Kashmir Bank</option>
+        <option>Karnataka Bank Ltd</option>
+        <option>Karur Vysya Bank</option>
+        <option>Kotak Bank</option>
+        <option>Laxmi Vilas Bank</option>
+        <option>Oriental Bank of Commerce</option>
+        <option>Punjab National Bank - Corporate Banking</option>
+        <option>Punjab National Bank - Retail Banking</option>
+        <option>Punjab & Sind Bank</option>
+        <option>Shamrao Vitthal Co-operative Bank</option>
+        <option>South Indian Bank</option>
+        <option>State Bank of Bikaner & Jaipur</option>
+        <option>State Bank of Hyderabad</option>
+        <option>State Bank of India</option>
+        <option>State Bank of Mysore</option>
+        <option>State Bank of Patiala</option>
+        <option>State Bank of Travancore</option>
+        <option>Syndicate Bank</option>
+        <option>Tamilnad Mercantile Bank Ltd.</option>
+        <option>UCO Bank</option>
+        <option>Union Bank of India</option>
+        <option>United Bank of India</option>
+        <option>Vijaya Bank</option>
+        <option>Yes Bank Ltd</option>
+        </select>
+      </div>
+        
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Pay</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3">
+   <span class="text-light">© 2021 Copyright:</span> 
+    <a class="text-light" href="https://paylo.netlify.app/">paylo.netlify.app</a>
+  </div>
+  <!-- Copyright -->
+</footer>
    <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

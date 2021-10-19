@@ -1,6 +1,9 @@
 html,body{
     font-family: 'Montserrat', sans-serif;
 }
+ul,li{
+    list-style-type:none ;
+}
 h1,h2,h3,h4,h5,h6,p,span,ul,li,a,ol{
     font-family: 'Montserrat', sans-serif;
 }
@@ -132,6 +135,9 @@ a.navbar-brand>h4{
 .w-75 .card-body:last-child{
        border:0;
 }    
+.payment{
+    margin-bottom: 2rem;
+}
 .payment-card-title{
     font-size: 20px;
     color :#333;
@@ -143,3 +149,36 @@ a.navbar-brand>h4{
     line-height: initial;
     font-size: 12px;
 }
+.border-bottom{
+    padding-bottom: 1rem;
+    border-color: #ddd;
+}
+.select{
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+.btn-link{
+    color:#fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.mr-2{margin-right: 5px;font-weight: 500;}
+
+@media only screen and (max-width: 480px) {
+    .w-75{
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    .card{
+        margin-bottom: 1rem;
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    .w-75{
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+ }
+
