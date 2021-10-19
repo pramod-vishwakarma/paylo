@@ -1,0 +1,145 @@
+html,body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,span,ul,li,a,ol{
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-light {
+    /* background-color: #fbfbfb!important; */
+    background: rgb(0,114,255);
+    background: linear-gradient(
+90deg, rgba(0,114,255,1) 35%, rgba(0,212,255,1) 100%);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+ul+span{
+    color: #fff;
+    margin-right: 5px;
+}
+a.navbar-brand>h4{
+    color: #fff;
+}
+.card1{
+    background: rgb(252,0,255);
+    background: linear-gradient(118deg, rgba(252,0,255,1) 0%, rgba(33,212,253,1) 100%);
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 200px;
+}
+.card2{
+    background: rgb(255,78,80);
+    background: linear-gradient(118deg, rgba(255,78,80,1) 0%, rgba(252,0,255,1) 100%);
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 200px;
+}
+.card3{
+    background: rgb(255,78,80);
+    background: linear-gradient(118deg, rgba(255,78,80,1) 0%, rgba(252,0,255,1) 100%);
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 200px;
+}
+.card-title{
+    font-size: 25px;
+    color:#fff;
+    margin-top: 2rem;
+}
+.card ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.card ul li:nth-child(1){
+    color: #fff;
+    font-size: 10px;
+    line-height: initial;
+    
+}
+.card ul li:nth-child(2){
+    color: #fff;
+    margin-left: 5px;
+    font-weight: 600;
+    line-height: initial;
+}
+.card ul li:nth-child(3){
+    margin-left: 25px;
+    color: #fff;
+    font-size: 10px;
+    line-height: initial;
+}
+.card ul li:nth-child(4){
+    color: #fff;
+    margin-left: 5px;
+    line-height: initial;
+    font-weight: 600;
+}
+.flex-end{
+    justify-content: flex-end;
+    display: flex;
+}
+.flex-end img:nth-child(1){
+    width: 50px;
+}
+.flex-end img{
+    width: 60px;
+}
+.card .w-75{
+    border-radius: 1rem;
+}
+.w-75 ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.w-75 ul li:nth-child(1){
+    color: #333;
+    font-size: 10px;
+    align-items: center;
+    display: flex;
+    width: 40px;
+    margin-right: 10px;
+    line-height: initial;
+    
+}
+.w-75 ul li:nth-child(2){
+    color: #333;
+    margin-left: 5px;
+    font-weight: 500;
+    line-height: initial;
+}
+.w-75 ul li span{
+    color: #333;
+    font-size: 12px;
+    line-height: initial;
+}
+.w-75 ul li:nth-child(4){
+    color: #333;
+    margin-left: 5px;
+    font-weight: 500;
+    line-height: initial;
+}
+.justify-content-between{
+    display: flex;
+}
+.visa{
+    width: 40px;
+}
+.w-75 .card-body{
+    border-bottom: 1px solid #ddd;
+    }
+.w-75 .card-body:last-child{
+       border:0;
+}    
+.payment-card-title{
+    font-size: 20px;
+    color :#333;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.payment ul li span{
+    font-weight: 400;
+    line-height: initial;
+    font-size: 12px;
+}
